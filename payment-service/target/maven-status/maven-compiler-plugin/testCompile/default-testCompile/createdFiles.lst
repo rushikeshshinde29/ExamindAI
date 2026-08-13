@@ -1,0 +1,12 @@
+com\examind\payment\controller\PaymentControllerIntegrationTest.class
+com\examind\payment\controller\HealthCheckIntegrationTest.class
+com\examind\payment\selenium\PlansPageLoadSeleniumTest.class
+com\examind\payment\util\PlanPricingMappingTest.class
+com\examind\payment\selenium\LoginFlowSeleniumTest.class
+com\examind\payment\controller\GetPaymentPlansIntegrationTest.class
+com\examind\payment\security\JwtTokenProviderTest.class
+com\examind\payment\selenium\LogoutFlowSeleniumTest.class
+com\examind\payment\controller\GetMyPaymentsIntegrationTest.class
+com\examind\payment\security\JwtTokenTestHelper.class
+com\examind\payment\service\EmailServiceTest.class
+com\examind\payment\service\PaymentServiceTest.class

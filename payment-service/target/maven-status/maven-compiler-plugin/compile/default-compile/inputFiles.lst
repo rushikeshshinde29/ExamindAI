@@ -1,0 +1,15 @@
+F:\CDAC FINAL PROJECT DRAFT\Versions\removing unecessary code\examind-cleaned\examind-cleaned\payment-service\src\main\java\com\examind\payment\config\SecurityConfig.java
+F:\CDAC FINAL PROJECT DRAFT\Versions\removing unecessary code\examind-cleaned\examind-cleaned\payment-service\src\main\java\com\examind\payment\controller\PaymentController.java
+F:\CDAC FINAL PROJECT DRAFT\Versions\removing unecessary code\examind-cleaned\examind-cleaned\payment-service\src\main\java\com\examind\payment\entity\Payment.java
+F:\CDAC FINAL PROJECT DRAFT\Versions\removing unecessary code\examind-cleaned\examind-cleaned\payment-service\src\main\java\com\examind\payment\exception\CustomException.java
+F:\CDAC FINAL PROJECT DRAFT\Versions\removing unecessary code\examind-cleaned\examind-cleaned\payment-service\src\main\java\com\examind\payment\PaymentServiceApplication.java
+F:\CDAC FINAL PROJECT DRAFT\Versions\removing unecessary code\examind-cleaned\examind-cleaned\payment-service\src\main\java\com\examind\payment\repository\PaymentRepository.java
+F:\CDAC FINAL PROJECT DRAFT\Versions\removing unecessary code\examind-cleaned\examind-cleaned\payment-service\src\main\java\com\examind\payment\scheduler\PaymentReconciliationScheduler.java
+F:\CDAC FINAL PROJECT DRAFT\Versions\removing unecessary code\examind-cleaned\examind-cleaned\payment-service\src\main\java\com\examind\payment\security\CustomUserDetails.java
+F:\CDAC FINAL PROJECT DRAFT\Versions\removing unecessary code\examind-cleaned\examind-cleaned\payment-service\src\main\java\com\examind\payment\security\JwtAuthenticationFilter.java
+F:\CDAC FINAL PROJECT DRAFT\Versions\removing unecessary code\examind-cleaned\examind-cleaned\payment-service\src\main\java\com\examind\payment\security\JwtTokenProvider.java
+F:\CDAC FINAL PROJECT DRAFT\Versions\removing unecessary code\examind-cleaned\examind-cleaned\payment-service\src\main\java\com\examind\payment\service\EmailService.java
+F:\CDAC FINAL PROJECT DRAFT\Versions\removing unecessary code\examind-cleaned\examind-cleaned\payment-service\src\main\java\com\examind\payment\service\impl\EmailServiceImpl.java
+F:\CDAC FINAL PROJECT DRAFT\Versions\removing unecessary code\examind-cleaned\examind-cleaned\payment-service\src\main\java\com\examind\payment\service\impl\PaymentServiceImpl.java
+F:\CDAC FINAL PROJECT DRAFT\Versions\removing unecessary code\examind-cleaned\examind-cleaned\payment-service\src\main\java\com\examind\payment\service\PaymentService.java
+F:\CDAC FINAL PROJECT DRAFT\Versions\removing unecessary code\examind-cleaned\examind-cleaned\payment-service\src\main\java\com\examind\payment\util\PlanPricingMapping.java
