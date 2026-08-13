@@ -1,7 +1,7 @@
 # QuizMaster Pro v2 — ASP.NET Core 8 + React + SQL Server
 
 ## 🚀 Tech Stack
-- **Backend**: ASP.NET Core 8 Web API
+- **Backend**: ASP.NET Core 8 Web API.
 - **Frontend**: React 18 + React Bootstrap 5
 - **Database**: MS SQL Server
 - **Auth**: JWT Bearer (Role-Based: Student / Faculty / Admin)
