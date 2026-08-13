@@ -1,0 +1,109 @@
+.shimmer {
+  background: linear-gradient(
+    90deg,
+    #f1f5f9 25%,
+    #e2e8f0 50%,
+    #f1f5f9 75%
+  );
+  background-size: 200% 100%;
+  animation: loading 1.5s infinite;
+  border-radius: 6px;
+}
+
+@keyframes loading {
+  0% { background-position: 200% 0; }
+  100% { background-position: -200% 0; }
+}
+
+.textStack {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  width: 100%;
+}
+
+.line {
+  height: 16px;
+  width: 100%;
+}
+
+.lastLine {
+  width: 80%;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+  gap: 20px;
+  width: 100%;
+}
+
+.card {
+  background: white;
+  border-radius: 16px;
+  padding: 24px;
+  border: 1px solid #f1f5f9;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  min-height: 160px;
+}
+
+.circle {
+  width: 48px;
+  height: 48px;
+  border-radius: 50%;
+  background: #e2e8f0;
+}
+
+.lineLong {
+  height: 14px;
+  width: 70%;
+  background: #e2e8f0;
+  border-radius: 4px;
+}
+
+.lineShort {
+  height: 14px;
+  width: 40%;
+  background: #e2e8f0;
+  border-radius: 4px;
+}
+
+.table {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  width: 100%;
+}
+
+.row {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  padding: 12px 16px;
+  border-radius: 8px;
+  background: white;
+  border: 1px solid #f1f5f9;
+}
+
+.cellSmall {
+  width: 40px;
+  height: 12px;
+  background: #e2e8f0;
+  border-radius: 4px;
+}
+
+.cellMedium {
+  width: 100px;
+  height: 12px;
+  background: #e2e8f0;
+  border-radius: 4px;
+}
+
+.cellLarge {
+  flex: 1;
+  height: 12px;
+  background: #e2e8f0;
+  border-radius: 4px;
+}

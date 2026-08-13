@@ -1,0 +1,727 @@
+@import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap');
+@import "tailwindcss";
+
+/* ═══════════════════════════════════════════════════════════
+   Examind AI — AURORA Design System
+   Color: Midnight Black + Electric Purple + Neon Green
+   Modern, Bold, Glassmorphism inspired
+═══════════════════════════════════════════════════════════ */
+
+/* 
+========================================================================
+   THEME CONFIGURATION
+   - VERSION 2: Dark Violet Theme (ACTIVE)
+   - VERSION 1: Light Theme (INACTIVE - Commented below)
+========================================================================
+*/
+
+/* ── VERSION 2: DARK VIOLET THEME (INACTIVE) ──
+:root {
+  --primary:        #6200EE;   
+  --primary-dark:   #3700B3;
+  --primary-light:  #BB86FC;   
+  --primary-glow:   rgba(187, 134, 252, 0.15);
+
+  --accent:         #BB86FC;   
+  --accent-dark:    #6200EE;
+  --accent-light:   #e0c3fc;
+
+  --neon:           #84cc16;   
+  --neon-dark:      #65a30d;
+  --neon-glow:      rgba(132,204,22,0.12);
+
+  --success:  #4ade80;
+  --warning:  #fb923c;
+  --danger:   #f43f5e;
+  --info:     #BB86FC;
+
+  --bg-base:    #121212;   
+  --bg-surface: #1e1e1e;   
+  --bg-raised:  #252525;   
+  --bg-border:  #2e2e2e;   
+  --bg-glass:   rgba(30, 30, 30, 0.7);
+
+  --text-primary:   #FFFFFF;   
+  --text-secondary: #e0e0e0;   
+  --text-muted:     #888888;   
+
+  --shadow:       0 4px 16px rgba(0,0,0,0.5);
+  --shadow-md:    0 8px 32px rgba(0,0,0,0.6);
+  --shadow-lg:    0 16px 48px rgba(0,0,0,0.7);
+  --glow-purple:  0 0 20px rgba(187, 134, 252, 0.35);
+  --glow-cyan:    0 0 20px rgba(187, 134, 252, 0.25);
+  --glow-neon:    0 0 20px rgba(132,204,22,0.25);
+
+  --radius-xs:  6px;
+  --radius-sm:  10px;
+  --radius:     14px;
+  --radius-md:  18px;
+  --radius-lg:  24px;
+  --radius-xl:  32px;
+
+  --font-sans:    'Space Grotesk', -apple-system, sans-serif;
+  --font-display: 'Syne', var(--font-sans);
+
+  --sidebar-w: 256px;
+  --header-h:  64px;
+
+  --gray-50:  #1e1e1e;
+  --gray-100: #252525;
+  --gray-200: #2e2e2e;
+  --gray-300: #444444;
+  --gray-400: #666666;
+  --gray-500: #888888;
+  --gray-600: #aaaaaa;
+  --gray-700: #cccccc;
+  --gray-800: #e0e0e0;
+  --gray-900: #ffffff;
+}
+*/
+
+/* ── VERSION 1: LIGHT THEME (ACTIVE) ── */
+:root {
+  --primary:        #6850DB; /* Medium Purple / Indigo */
+  --primary-dark:   #4f39bd;
+  --primary-light:  #8c77f0;
+  --primary-glow:   rgba(104, 80, 219, 0.1);
+  --primary-lighter: #f5f4fd;
+
+  --accent:         #6d28d9; /* Matching accent purple */
+  --accent-dark:    #4c1d95;
+  --accent-light:   #8b5cf6;
+
+  --neon:           #84cc16;
+  --neon-dark:      #65a30d;
+  --neon-glow:      rgba(132,204,22,0.12);
+
+  --success:  #16a34a;
+  --warning:  #ea580c;
+  --danger:   #dc2626;
+  --info:     #4c1d95;
+
+  --bg-base:    #ffffff; /* Bright White */
+  --bg-surface: #ffffff; /* Bright White */
+  --bg-raised:  #fbfbfe; /* Near White */
+  --bg-border:  #e2e8f0;
+  --bg-glass:   rgba(255, 255, 255, 0.9);
+
+  --text-primary:   #1e1b4b; /* Very dark blue-purple for high contrast */
+  --text-secondary: #475569;
+  --text-muted:     #64748b;
+
+  --shadow:       0 1px 3px rgba(0,0,0,0.05), 0 1px 2px rgba(0,0,0,0.02);
+  --shadow-md:    0 4px 6px -1px rgba(0,0,0,0.08), 0 2px 4px -1px rgba(0,0,0,0.04);
+  --shadow-lg:    0 10px 15px -3px rgba(0,0,0,0.08), 0 4px 6px -2px rgba(0,0,0,0.03);
+  --glow-purple:  0 0 16px rgba(76,29,149,0.15);
+  --glow-cyan:    0 0 16px rgba(109,40,217,0.15);
+  --glow-neon:    0 0 16px rgba(132,204,22,0.15);
+
+  --radius-xs:  6px;
+  --radius-sm:  10px;
+  --radius:     14px;
+  --radius-md:  18px;
+  --radius-lg:  24px;
+  --radius-xl:  32px;
+
+  --font-sans:    'Plus Jakarta Sans', -apple-system, sans-serif;
+  --font-display: 'Plus Jakarta Sans', var(--font-sans);
+
+  --sidebar-w: 256px;
+  --header-h:  64px;
+
+  --gray-50:  #f8fafc;
+  --gray-100: #f1f5f9;
+  --gray-200: #e2e8f0;
+  --gray-300: #cbd5e1;
+  --gray-400: #94a3b8;
+  --gray-500: #64748b;
+  --gray-600: #475569;
+  --gray-700: #334155;
+  --gray-800: #1e293b;
+  --gray-900: #0f172a;
+}
+
+*, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+html { font-size: 16px; scroll-behavior: smooth; }
+html.font-small, body.font-small { font-size: 13.5px !important; }
+html.font-medium, body.font-medium { font-size: 16px !important; }
+html.font-large, body.font-large { font-size: 19px !important; }
+
+body {
+  font-family: var(--font-sans);
+  background: var(--bg-base);
+  color: var(--text-primary);
+  line-height: 1.6;
+  -webkit-font-smoothing: antialiased;
+  background-image:
+    radial-gradient(ellipse at 20% 50%, rgba(124,58,237,0.03) 0%, transparent 60%),
+    radial-gradient(ellipse at 80% 20%, rgba(2,132,199,0.02) 0%, transparent 50%);
+  background-attachment: fixed;
+}
+
+h1,h2,h3,h4,h5,h6 {
+  font-family: var(--font-display);
+  font-weight: 700;
+  line-height: 1.25;
+  color: var(--text-primary);
+}
+
+a { color: var(--primary); text-decoration: none; transition: color 0.2s; }
+a:hover { color: var(--primary-light); }
+button { cursor: pointer; font-family: var(--font-sans); border: none; }
+input, textarea, select {
+  font-family: var(--font-sans);
+  background: var(--bg-raised);
+  color: var(--text-primary);
+  border: 1px solid var(--bg-border);
+  border-radius: var(--radius-sm);
+  padding: 10px 14px;
+  outline: none;
+  transition: border-color 0.2s, box-shadow 0.2s;
+}
+input:focus, textarea:focus, select:focus {
+  border-color: var(--primary);
+  box-shadow: 0 0 0 3px var(--primary-glow);
+}
+input::placeholder, textarea::placeholder { color: var(--text-muted); }
+select option { background: var(--bg-surface); }
+img { max-width: 100%; }
+
+/* ── Scrollbar ── */
+::-webkit-scrollbar { width: 4px; height: 4px; }
+::-webkit-scrollbar-track { background: transparent; }
+::-webkit-scrollbar-thumb { background: var(--bg-border); border-radius: 10px; }
+::-webkit-scrollbar-thumb:hover { background: var(--primary); }
+
+/* ── Global Spinner ── */
+.spinner {
+  width: 36px; height: 36px;
+  border: 2px solid var(--bg-border);
+  border-top-color: var(--primary);
+  border-radius: 50%;
+  animation: spin 0.7s linear infinite;
+}
+.spinner-sm { width: 16px; height: 16px; border-width: 2px; }
+
+/* ── Buttons ── */
+.btn {
+  display: inline-flex; align-items: center; gap: 8px;
+  padding: 10px 20px; border-radius: var(--radius-sm);
+  font-weight: 600; font-size: 0.875rem; font-family: var(--font-sans);
+  transition: all 0.2s; border: none; cursor: pointer;
+}
+.btn-primary {
+  background: var(--primary);
+  color: white;
+  box-shadow: 0 4px 14px rgba(124,58,237,0.25);
+}
+.btn-primary:hover { background: #4f39bd; transform: translateY(-1px); box-shadow: var(--glow-purple); }
+.btn-accent { background: var(--accent); color: white; font-weight: 700; }
+.btn-accent:hover { box-shadow: var(--glow-cyan); transform: translateY(-1px); }
+.btn-neon { background: var(--neon); color: var(--text-primary); font-weight: 700; }
+.btn-neon:hover { box-shadow: var(--glow-neon); transform: translateY(-1px); }
+.btn-ghost { background: var(--bg-raised); color: var(--text-secondary); border: 1px solid var(--bg-border); }
+.btn-ghost:hover { border-color: var(--primary); color: var(--primary); }
+.btn-danger { background: var(--danger); color: white; }
+.btn-sm { padding: 6px 14px; font-size: 0.8rem; }
+.btn-lg { padding: 13px 28px; font-size: 1rem; }
+
+/* ── Cards ── */
+.card {
+  background: var(--bg-surface);
+  border: 1px solid var(--bg-border);
+  border-radius: var(--radius);
+  padding: 24px;
+}
+.card-glow { border-color: rgba(124,58,237,0.3); box-shadow: 0 0 0 1px rgba(124,58,237,0.05) inset; }
+.card-hover { transition: all 0.25s; cursor: pointer; }
+.card-hover:hover { border-color: var(--primary); box-shadow: var(--glow-purple); transform: translateY(-2px); }
+
+/* ── Glass Card ── */
+.glass {
+  background: var(--bg-glass);
+  backdrop-filter: blur(20px);
+  border: 1px solid rgba(255,255,255,0.4);
+  border-radius: var(--radius);
+}
+
+/* ── Stat Card ── */
+.stat-card {
+  background: var(--bg-surface);
+  border: 1px solid var(--bg-border);
+  border-radius: var(--radius);
+  padding: 20px;
+  display: flex; align-items: center; gap: 16px;
+}
+.stat-icon {
+  width: 48px; height: 48px; border-radius: var(--radius-sm);
+  display: flex; align-items: center; justify-content: center;
+  font-size: 1.25rem; flex-shrink: 0;
+}
+.si-purple { background: rgba(124,58,237,0.1); color: var(--primary); }
+.si-cyan   { background: rgba(2,132,199,0.1);  color: var(--accent-dark); }
+.si-neon   { background: rgba(132,204,22,0.12);  color: var(--neon-dark); }
+.si-rose   { background: rgba(220,38,38,0.1);   color: var(--danger); }
+.si-orange { background: rgba(234,88,12,0.1);  color: var(--warning); }
+.si-green  { background: rgba(22,163,74,0.1);  color: var(--success); }
+
+/* ── Badge/Pill ── */
+.badge {
+  display: inline-flex; align-items: center; gap: 4px;
+  padding: 3px 10px; border-radius: 999px;
+  font-size: 0.7rem; font-weight: 600; letter-spacing: 0.02em;
+}
+.badge-purple { background: rgba(124,58,237,0.1); color: var(--primary); }
+.badge-cyan   { background: rgba(2,132,199,0.1); color: var(--accent-dark); }
+.badge-neon   { background: rgba(132,204,22,0.12); color: var(--neon-dark); }
+.badge-green  { background: rgba(22,163,74,0.1); color: var(--success); }
+.badge-red    { background: rgba(220,38,38,0.1);  color: var(--danger); }
+.badge-orange { background: rgba(234,88,12,0.1); color: var(--warning); }
+.badge-gray   { background: rgba(100,116,139,0.1);   color: var(--text-secondary); }
+
+/* ── Table ── */
+.table-wrap { overflow-x: auto; border-radius: var(--radius); border: 1px solid var(--bg-border); }
+table { width: 100%; border-collapse: collapse; }
+thead { background: var(--bg-raised); }
+th { padding: 12px 16px; text-align: left; font-size: 0.72rem; font-weight: 600; text-transform: uppercase; letter-spacing: 0.08em; color: var(--text-muted); }
+td { padding: 13px 16px; border-top: 1px solid var(--bg-border); font-size: 0.875rem; }
+tr:hover td { background: var(--bg-raised); }
+
+/* ── Form ── */
+.form-group { display: flex; flex-direction: column; gap: 6px; }
+.form-label { font-size: 0.8rem; font-weight: 600; color: var(--text-secondary); letter-spacing: 0.03em; }
+.form-input {
+  width: 100%; padding: 11px 14px;
+  background: var(--bg-raised); border: 1px solid var(--bg-border);
+  border-radius: var(--radius-sm); color: var(--text-primary); font-size: 0.9rem;
+}
+.form-input:focus { border-color: var(--primary); box-shadow: 0 0 0 3px var(--primary-glow); }
+
+/* ── Page header ── */
+.page-header {
+  display: flex; align-items: center; justify-content: space-between;
+  margin-bottom: 28px; flex-wrap: wrap; gap: 12px;
+}
+.page-title { font-size: 1.6rem; font-weight: 800; font-family: var(--font-display); }
+.page-subtitle { font-size: 0.875rem; color: var(--text-secondary); margin-top: 3px; }
+
+/* ── Gradient Text ── */
+.grad-text { background: linear-gradient(135deg, var(--primary), var(--accent)); -webkit-background-clip: text; -webkit-text-fill-color: transparent; background-clip: text; }
+.grad-text-neon { background: linear-gradient(135deg, var(--neon), var(--accent)); -webkit-background-clip: text; -webkit-text-fill-color: transparent; background-clip: text; }
+
+/* ── Progress ── */
+.progress-track { width: 100%; height: 6px; background: var(--bg-border); border-radius: 999px; overflow: hidden; }
+.progress-fill { height: 100%; border-radius: 999px; background: linear-gradient(90deg, var(--primary), var(--accent)); transition: width 0.5s ease; }
+
+/* ── Tabs ── */
+.tabs { display: flex; gap: 4px; background: var(--bg-raised); padding: 4px; border-radius: var(--radius-sm); }
+.tab { flex: 1; padding: 7px 14px; border-radius: 8px; font-size: 0.82rem; font-weight: 600; color: var(--text-secondary); background: none; border: none; cursor: pointer; transition: all 0.2s; }
+.tab.active { background: var(--primary); color: white; box-shadow: 0 2px 8px rgba(139,92,246,0.4); }
+
+/* ── Modal ── */
+.modal-backdrop { position: fixed; inset: 0; background: rgba(0,0,0,0.8); backdrop-filter: blur(6px); z-index: 999; display: flex; align-items: center; justify-content: center; animation: fadeIn 0.2s ease; }
+.modal { background: var(--bg-surface); border: 1px solid var(--bg-border); border-radius: var(--radius-lg); padding: 32px; width: min(90vw, 520px); box-shadow: var(--shadow-lg); animation: fadeInScale 0.25s ease; }
+
+/* ── Skeleton ── */
+.skeleton { background: linear-gradient(90deg, var(--bg-raised) 25%, var(--bg-border) 50%, var(--bg-raised) 75%); background-size: 200% 100%; animation: shimmer 1.4s infinite; border-radius: var(--radius-sm); }
+
+/* ── Empty state ── */
+.empty-state { text-align: center; padding: 60px 20px; color: var(--text-secondary); }
+.empty-state .empty-icon { font-size: 3rem; margin-bottom: 16px; opacity: 0.4; }
+.empty-state h3 { font-size: 1.1rem; color: var(--text-primary); margin-bottom: 8px; }
+
+/* ── Divider ── */
+.divider { height: 1px; background: var(--bg-border); margin: 20px 0; }
+
+/* ── Animations ── */
+@keyframes spin { to { transform: rotate(360deg); } }
+@keyframes fadeIn { from { opacity: 0; } to { opacity: 1; } }
+@keyframes fadeInScale { from { opacity: 0; transform: scale(0.95); } to { opacity: 1; transform: scale(1); } }
+@keyframes fadeInUp { from { opacity: 0; transform: translateY(20px); } to { opacity: 1; transform: translateY(0); } }
+@keyframes shimmer { from { background-position: -200% 0; } to { background-position: 200% 0; } }
+@keyframes pulse { 0%,100% { opacity: 1; } 50% { opacity: 0.5; } }
+@keyframes float { 0%,100% { transform: translateY(0); } 50% { transform: translateY(-8px); } }
+
+.fade-in { animation: fadeIn 0.4s ease forwards; }
+.fade-in-up { animation: fadeInUp 0.4s ease forwards; }
+.float { animation: float 4s ease-in-out infinite; }
+
+/* ── Neon border ── */
+.neon-border { border: 1px solid rgba(139,92,246,0.4); box-shadow: 0 0 0 1px rgba(139,92,246,0.1) inset, inset 0 1px 0 rgba(255,255,255,0.05); }
+
+/* ── Responsive ── */
+@media (max-width: 768px) {
+  .page-title { font-size: 1.3rem; }
+  .modal { padding: 24px; }
+}
+
+/* ═══════════════════════════════════════════════════════════
+   AURORA Design System - High-Contrast & Dynamic Text Mapping Layer
+   ===========================================================
+   CHOOSE THE COMPATIBILITY LAYER BELOW MATCHING YOUR THEME
+   ===========================================================
+   - VERSION 2 (DARK VIOLET) COMPATIBILITY LAYER (ACTIVE)
+   - VERSION 1 (LIGHT THEME) COMPATIBILITY LAYER (INACTIVE - Commented)
+ ═══════════════════════════════════════════════════════════ */
+
+/* ── VERSION 2 COMPATIBILITY LAYER (INACTIVE - Commented below) ──
+.bg-white,
+.bg-slate-50, .bg-slate-100, .bg-gray-50, .bg-gray-100,
+.bg-zinc-50, .bg-zinc-100, .bg-neutral-50, .bg-neutral-100,
+div[style*="background: white"], div[style*="background:white"],
+div[style*="background-color: white"], div[style*="background-color:white"],
+div[style*="background: #fff"], div[style*="background:#fff"],
+div[style*="background-color: #fff"], div[style*="background-color:#fff"] {
+  color: #1e293b !important;
+}
+.bg-white h1, .bg-white h2, .bg-white h3, .bg-white h4, .bg-white h5, .bg-white h6,
+.bg-white p, .bg-white label, .bg-white span:not(.btn):not([class*="badge"]):not([class*="token"]), .bg-white li, .bg-white td, .bg-white th,
+.bg-slate-50 h1, .bg-slate-50 h2, .bg-slate-50 h3, .bg-slate-50 h4, .bg-slate-50 h5, .bg-slate-50 h6,
+.bg-slate-50 p, .bg-slate-50 label, .bg-slate-50 span:not(.btn):not([class*="badge"]):not([class*="token"]), .bg-slate-50 li,
+.bg-slate-100 h1, .bg-slate-100 h2, .bg-slate-100 h3, .bg-slate-100 h4, .bg-slate-100 h5, .bg-slate-100 h6,
+.bg-slate-100 p, .bg-slate-100 label, .bg-slate-100 span:not(.btn):not([class*="badge"]):not([class*="token"]), .bg-slate-100 li,
+.bg-gray-50 h1, .bg-gray-50 h2, .bg-gray-50 h3, .bg-gray-50 h4, .bg-gray-50 h5, .bg-gray-50 h6,
+.bg-gray-50 p, .bg-gray-50 label, .bg-gray-50 span:not(.btn):not([class*="badge"]):not([class*="token"]), .bg-gray-50 li,
+.bg-gray-100 h1, .bg-gray-100 h2, .bg-gray-100 h3, .bg-gray-100 h4, .bg-gray-100 h5, .bg-gray-100 h6,
+.bg-gray-100 p, .bg-gray-100 label, .bg-gray-100 span:not(.btn):not([class*="badge"]):not([class*="token"]), .bg-gray-100 li,
+div[style*="background: white"] h1, div[style*="background: white"] h2, div[style*="background: white"] h3,
+div[style*="background: white"] p, div[style*="background: white"] label, div[style*="background: white"] span:not(.btn):not([class*="token"]),
+div[style*="background:white"] h1, div[style*="background:white"] h2, div[style*="background:white"] h3,
+div[style*="background:white"] p, div[style*="background:white"] label, div[style*="background:white"] span:not(.btn):not([class*="token"]),
+div[style*="background-color: white"] h1, div[style*="background-color: white"] h2, div[style*="background-color: white"] h3,
+div[style*="background-color: white"] p, div[style*="background-color: white"] label, div[style*="background-color: white"] span:not(.btn):not([class*="token"]),
+div[style*="background-color:white"] h1, div[style*="background-color:white"] h2, div[style*="background-color:white"] h3,
+div[style*="background-color:white"] p, div[style*="background-color:white"] label, div[style*="background-color:white"] span:not(.btn):not([class*="token"]) {
+  color: #1e293b !important;
+}
+.bg-white input, .bg-white select, .bg-white textarea,
+.bg-slate-50 input, .bg-slate-50 select, .bg-slate-50 textarea,
+.bg-slate-100 input, .bg-slate-100 select, .bg-slate-100 textarea,
+.bg-gray-50 input, .bg-gray-50 select, .bg-gray-50 textarea,
+.bg-gray-100 input, .bg-gray-100 select, .bg-gray-100 textarea {
+  color: #0f172a !important;
+  background-color: #ffffff !important;
+  border-color: #cbd5e1 !important;
+}
+.bg-white input::placeholder, .bg-white textarea::placeholder {
+  color: #94a3b8 !important;
+}
+[class*="_card_"], [class*="Card_"], [class*="_card"],
+[class*="_modal_"], [class*="_tableWrap_"], [class*="_qArea_"], [class*="_palette_"],
+[class*="_submitCard_"], [class*="_introCard_"], [class*="_warnModal_"] {
+  background: var(--bg-surface) !important;
+  color: var(--text-primary) !important;
+  border-color: var(--bg-border) !important;
+}
+[class*="_card_"] h1, [class*="_card_"] h2, [class*="_card_"] h3, [class*="_card_"] h4, [class*="_card_"] h5, [class*="_card_"] h6,
+[class*="_card_"] p, [class*="_card_"] label, [class*="_card_"] span:not(.btn):not([class*="badge"]):not([class*="icon"]):not([class*="token"]), [class*="_card_"] li, [class*="_card_"] td,
+[class*="Card_"] h1, [class*="Card_"] h2, [class*="Card_"] h3, [class*="Card_"] h4, [class*="Card_"] h5, [class*="Card_"] h6,
+[class*="Card_"] p, [class*="Card_"] label, [class*="Card_"] span:not(.btn):not([class*="badge"]):not([class*="icon"]):not([class*="token"]), [class*="Card_"] li, [class*="Card_"] td,
+[class*="_modal_"] h1, [class*="_modal_"] h2, [class*="_modal_"] h3, [class*="_modal_"] h4, [class*="_modal_"] h5, [class*="_modal_"] h6,
+[class*="_modal_"] p, [class*="_modal_"] label, [class*="_modal_"] span:not(.btn):not([class*="badge"]):not([class*="token"]),
+[class*="_qArea_"] h1, [class*="_qArea_"] h2, [class*="_qArea_"] h3, [class*="_qArea_"] h4,
+[class*="_qArea_"] p, [class*="_qArea_"] label, [class*="_qArea_"] span:not(.btn):not([class*="badge"]):not([class*="token"]),
+[class*="_submitCard_"] h1, [class*="_submitCard_"] h2, [class*="_submitCard_"] p, [class*="_submitCard_"] span:not(.btn):not([class*="token"]),
+[class*="_introCard_"] h1, [class*="_introCard_"] h2, [class*="_introCard_"] p, [class*="_introCard_"] span:not(.btn):not([class*="token"]) {
+  color: var(--text-primary) !important;
+}
+[class*="_card_"] input, [class*="_card_"] select, [class*="_card_"] textarea,
+[class*="Card_"] input, [class*="Card_"] select, [class*="Card_"] textarea,
+[class*="_modal_"] input, [class*="_modal_"] select, [class*="_modal_"] textarea {
+  color: var(--text-primary) !important;
+  background-color: var(--bg-raised) !important;
+  border-color: var(--bg-border) !important;
+}
+[class*="_card_"] input::placeholder, [class*="_card_"] textarea::placeholder,
+[class*="Card_"] input::placeholder, [class*="Card_"] textarea::placeholder {
+  color: var(--text-muted) !important;
+}
+[class*="_layout_"] [class*="_active_"],
+[class*="_layout_"] [class*="_rBtnActive_"],
+[class*="_layout_"] [class*="_activeTab_"],
+[class*="_layout_"] [class*="_scopeTabActive_"],
+[class*="_layout_"] [class*="_tabActive_"] {
+  background: var(--primary) !important;
+  color: white !important;
+  border-color: var(--primary-light) !important;
+}
+*/
+
+/* ── VERSION 1 COMPATIBILITY LAYER (ACTIVE) ── */
+.bg-white,
+.bg-slate-50, .bg-slate-100, .bg-gray-50, .bg-gray-100,
+.bg-zinc-50, .bg-zinc-100, .bg-neutral-50, .bg-neutral-100,
+[class*="_card_"], [class*="Card_"], [class*="_card"],
+[class*="_modal_"], [class*="_tableWrap_"], [class*="_qArea_"], [class*="_palette_"],
+[class*="_submitCard_"], [class*="_introCard_"], [class*="_warnModal_"],
+div[style*="background: white"], div[style*="background:white"],
+div[style*="background-color: white"], div[style*="background-color:white"],
+div[style*="background: #fff"], div[style*="background:#fff"],
+div[style*="background-color: #fff"], div[style*="background-color:#fff"] {
+  color: #1e293b !important;
+}
+.bg-white h1, .bg-white h2, .bg-white h3, .bg-white h4, .bg-white h5, .bg-white h6,
+.bg-white p, .bg-white label, .bg-white span:not(.btn):not([class*="badge"]):not([class*="token"]), .bg-white li, .bg-white td, .bg-white th,
+.bg-slate-50 h1, .bg-slate-50 h2, .bg-slate-50 h3, .bg-slate-50 h4, .bg-slate-50 h5, .bg-slate-50 h6,
+.bg-slate-50 p, .bg-slate-50 label, .bg-slate-50 span:not(.btn):not([class*="badge"]):not([class*="token"]), .bg-slate-50 li,
+.bg-slate-100 h1, .bg-slate-100 h2, .bg-slate-100 h3, .bg-slate-100 h4, .bg-slate-100 h5, .bg-slate-100 h6,
+.bg-slate-100 p, .bg-slate-100 label, .bg-slate-100 span:not(.btn):not([class*="badge"]):not([class*="token"]), .bg-slate-100 li,
+.bg-gray-50 h1, .bg-gray-50 h2, .bg-gray-50 h3, .bg-gray-50 h4, .bg-gray-50 h5, .bg-gray-50 h6,
+.bg-gray-50 p, .bg-gray-50 label, .bg-gray-50 span:not(.btn):not([class*="badge"]):not([class*="token"]), .bg-gray-50 li,
+.bg-gray-100 h1, .bg-gray-100 h2, .bg-gray-100 h3, .bg-gray-100 h4, .bg-gray-100 h5, .bg-gray-100 h6,
+.bg-gray-100 p, .bg-gray-100 label, .bg-gray-100 span:not(.btn):not([class*="badge"]):not([class*="token"]), .bg-gray-100 li,
+[class*="_card_"] h1, [class*="_card_"] h2, [class*="_card_"] h3, [class*="_card_"] h4, [class*="_card_"] h5, [class*="_card_"] h6,
+[class*="_card_"] p, [class*="_card_"] label, [class*="_card_"] span:not(.btn):not([class*="badge"]):not([class*="icon"]):not([class*="token"]), [class*="_card_"] li, [class*="_card_"] td,
+[class*="Card_"] h1, [class*="Card_"] h2, [class*="Card_"] h3, [class*="Card_"] h4, [class*="Card_"] h5, [class*="Card_"] h6,
+[class*="Card_"] p, [class*="Card_"] label, [class*="Card_"] span:not(.btn):not([class*="badge"]):not([class*="icon"]):not([class*="token"]), [class*="Card_"] li, [class*="Card_"] td,
+[class*="_modal_"] h1, [class*="_modal_"] h2, [class*="_modal_"] h3, [class*="_modal_"] h4, [class*="_modal_"] h5, [class*="_modal_"] h6,
+[class*="_modal_"] p, [class*="_modal_"] label, [class*="_modal_"] span:not(.btn):not([class*="badge"]):not([class*="token"]),
+[class*="_qArea_"] h1, [class*="_qArea_"] h2, [class*="_qArea_"] h3, [class*="_qArea_"] h4,
+[class*="_qArea_"] p, [class*="_qArea_"] label, [class*="_qArea_"] span:not(.btn):not([class*="badge"]):not([class*="token"]),
+[class*="_submitCard_"] h1, [class*="_submitCard_"] h2, [class*="_submitCard_"] p, [class*="_submitCard_"] span:not(.btn):not([class*="token"]),
+[class*="_introCard_"] h1, [class*="_introCard_"] h2, [class*="_introCard_"] p, [class*="_introCard_"] span:not(.btn):not([class*="token"]),
+div[style*="background: white"] h1, div[style*="background: white"] h2, div[style*="background: white"] h3,
+div[style*="background: white"] p, div[style*="background: white"] label, div[style*="background: white"] span:not(.btn):not([class*="token"]),
+div[style*="background:white"] h1, div[style*="background:white"] h2, div[style*="background:white"] h3,
+div[style*="background:white"] p, div[style*="background:white"] label, div[style*="background:white"] span:not(.btn):not([class*="token"]),
+div[style*="background-color: white"] h1, div[style*="background-color: white"] h2, div[style*="background-color: white"] h3,
+div[style*="background-color: white"] p, div[style*="background-color: white"] label, div[style*="background-color: white"] span:not(.btn):not([class*="token"]),
+div[style*="background-color:white"] h1, div[style*="background-color:white"] h2, div[style*="background-color:white"] h3,
+div[style*="background-color:white"] p, div[style*="background-color:white"] label, div[style*="background-color:white"] span:not(.btn):not([class*="token"]) {
+  color: #1e293b !important;
+}
+.bg-white input, .bg-white select, .bg-white textarea,
+.bg-slate-50 input, .bg-slate-50 select, .bg-slate-50 textarea,
+.bg-slate-100 input, .bg-slate-100 select, .bg-slate-100 textarea,
+.bg-gray-50 input, .bg-gray-50 select, .bg-gray-50 textarea,
+.bg-gray-100 input, .bg-gray-100 select, .bg-gray-100 textarea,
+[class*="_card_"] input, [class*="_card_"] select, [class*="_card_"] textarea,
+[class*="Card_"] input, [class*="Card_"] select, [class*="Card_"] textarea,
+[class*="_modal_"] input, [class*="_modal_"] select, [class*="_modal_"] textarea {
+  color: #0f172a !important;
+  background-color: #ffffff !important;
+  border-color: #cbd5e1 !important;
+}
+.bg-white input::placeholder, .bg-white textarea::placeholder,
+[class*="_card_"] input::placeholder, [class*="_card_"] textarea::placeholder,
+[class*="Card_"] input::placeholder, [class*="Card_"] textarea::placeholder {
+  color: #94a3b8 !important;
+}
+[class*="_layout_"] [class*="_active_"],
+[class*="_layout_"] [class*="_rBtnActive_"],
+[class*="_layout_"] [class*="_activeTab_"],
+[class*="_layout_"] [class*="_scopeTabActive_"],
+[class*="_layout_"] [class*="_tabActive_"] {
+  background: var(--primary) !important;
+  color: white !important;
+  border-color: var(--primary) !important;
+  box-shadow: var(--shadow-md) !important;
+}/* 1.5. Table{
+  background: #ffffff !important;
+  background-color: #ffffff !important;
+  border-color: #e2e8f0 !important;
+  color: #1e1b4b !important;
+}
+
+/* 2. Color Blind Mode */
+body.color-blind {
+  --primary:        #ea580c; /* High Contrast Orange */
+  --primary-dark:   #c2410c;
+  --primary-light:  #ffedd5;
+  --primary-glow:   rgba(234,88,12,0.12);
+
+  --accent:         #0284c7; /* High Contrast Blue */
+  --accent-dark:    #0369a1;
+  --accent-light:   #075985;
+}
+
+/* Color Blind Mode Sidebar Overrides */
+body.color-blind [class*="_sidebar_"] {
+  background: var(--primary) !important;
+}
+body.color-blind [class*="_navItem_"][class*="_active_"] {
+  color: var(--primary) !important;
+}
+body.color-blind [class*="_navArrow_"] {
+  color: var(--primary) !important;
+}
+
+/* 3. Font Size Accessibility */
+body.font-small {
+  font-size: 14px !important;
+}
+body.font-medium {
+  font-size: 16px !important;
+}
+body.font-large {
+  font-size: 18px !important;
+}
+
+/* Premium Gradients for Study Notes Cards */
+.bg-gradient-to-br {
+  background-size: cover;
+}
+.from-indigo-600.to-purple-700 {
+  background: linear-gradient(135deg, #4f46e5 0%, #7e22ce 100%) !important;
+}
+.from-blue-600.to-teal-500 {
+  background: linear-gradient(135deg, #2563eb 0%, #14b8a6 100%) !important;
+}
+.from-purple-600.to-pink-500 {
+  background: linear-gradient(135deg, #9333ea 0%, #ec4899 100%) !important;
+}
+.from-emerald-600.to-teal-700 {
+  background: linear-gradient(135deg, #059669 0%, #0f766e 100%) !important;
+}
+.from-amber-500.to-rose-600 {
+  background: linear-gradient(135deg, #f59e0b 0%, #e11d48 100%) !important;
+}
+
+@keyframes dialogFadeIn {
+  from {
+    opacity: 0;
+    transform: scale(0.95);
+  }
+  to {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+
+/* Custom code block formatting and text token overrides */
+.codeBlockContainer pre,
+.codeBlockContainer code,
+.codeBlockContainer span:not([class*="token"]):not([style*="color"]),
+.codeBlockContainer div:not([class*="token"]):not([style*="color"]) {
+  color: #f8f8f2 !important;
+}
+
+code.codeBlockInline {
+  color: #d8b4fe !important;
+  background-color: #1e293b !important;
+}
+
+/* Force rank cards inside hero sections to have white background and purple/theme text in all modes */
+[class*="hero"] [class*="Card"],
+[class*="hero"] [class*="card"] {
+  background: #ffffff !important;
+  background-color: #ffffff !important;
+  border: 1px solid #cbd5e1 !important;
+  border-color: #cbd5e1 !important;
+}
+[class*="hero"] [class*="Card"] span,
+[class*="hero"] [class*="card"] span,
+[class*="hero"] [class*="Card"] [class*="Label"],
+[class*="hero"] [class*="card"] [class*="label"] {
+  color: var(--primary) !important;
+  opacity: 0.85;
+}
+[class*="hero"] [class*="Card"] strong,
+[class*="hero"] [class*="card"] strong,
+[class*="hero"] [class*="Card"] [class*="Num"],
+[class*="hero"] [class*="card"] [class*="num"] {
+  color: var(--primary) !important;
+}
+
+/* Force code block header filename, copy button, and icons to be white color */
+.codeBlockContainer.codeBlockContainer.codeBlockContainer.codeBlockContainer.codeBlockContainer.codeBlockContainer > div:first-child span {
+  color: #ffffff !important;
+}
+.codeBlockContainer.codeBlockContainer.codeBlockContainer.codeBlockContainer.codeBlockContainer.codeBlockContainer > div:first-child svg {
+  color: #ffffff !important;
+}
+.codeBlockContainer.codeBlockContainer.codeBlockContainer.codeBlockContainer.codeBlockContainer.codeBlockContainer > div:first-child button {
+  background-color: #1e293b !important;
+  border: 1px solid #475569 !important;
+  border-color: #475569 !important;
+  color: #ffffff !important;
+}
+.codeBlockContainer.codeBlockContainer.codeBlockContainer.codeBlockContainer.codeBlockContainer.codeBlockContainer > div:first-child button:hover {
+  background-color: #334155 !important;
+  border-color: #64748b !important;
+  color: #ffffff !important;
+}
+.codeBlockContainer.codeBlockContainer.codeBlockContainer.codeBlockContainer.codeBlockContainer.codeBlockContainer > div:first-child button:hover svg,
+.codeBlockContainer.codeBlockContainer.codeBlockContainer.codeBlockContainer.codeBlockContainer.codeBlockContainer > div:first-child button:hover span {
+  color: #ffffff !important;
+}
+.codeBlockContainer.codeBlockContainer.codeBlockContainer.codeBlockContainer.codeBlockContainer.codeBlockContainer > div:first-child button span {
+  color: inherit !important;
+}
+
+/* Force Explanation Boxes (standard and AI) to have dark backgrounds and readable light text */
+[class*="rcExpl"],
+[class*="aiExplBox"] {
+  background: #1e293b !important;
+  background-color: #1e293b !important;
+  border: 1px solid #334155 !important;
+  border-left: 4px solid var(--primary) !important;
+  border-left-color: var(--primary) !important;
+  padding: 12px 16px !important;
+  border-radius: 8px !important;
+  color: #f1f5f9 !important;
+  margin-top: 10px !important;
+}
+[class*="rcExpl"] p,
+[class*="aiExplBox"] p,
+[class*="rcExpl"] li,
+[class*="aiExplBox"] li {
+  color: #f1f5f9 !important;
+}
+[class*="rcExpl"] strong,
+[class*="aiExplBox"] strong {
+  color: #ffffff !important;
+}
+
+/* Force code identifiers (e.g. s1, s2, System) inside the syntax highlighter to be light and visible */
+.codeBlockContainer.codeBlockContainer.codeBlockContainer.codeBlockContainer.codeBlockContainer.codeBlockContainer span:not([class*="token"]):not([style*="color"]) {
+  color: #f8f8f2 !important;
+}
+
+/* Responsive adjustments for Auth split layouts and Landing Page */
+@media (max-width: 900px) {
+  .auth-container {
+    flex-direction: column !important;
+  }
+  .auth-left {
+    display: none !important;
+  }
+  .auth-right {
+    padding: 32px 16px !important;
+    min-height: 100vh;
+  }
+
+  /* Landing Page Navbar & Hero section */
+  nav {
+    padding: 0 16px !important;
+  }
+  nav > div:nth-child(2),
+  nav > div:nth-child(3) {
+    display: none !important;
+  }
+  .landing-menu-btn {
+    display: block !important;
+  }
+  section:first-of-type {
+    padding: 100px 16px 40px !important;
+    min-height: auto !important;
+  }
+  section:first-of-type > div:first-child {
+    flex-direction: column !important;
+    text-align: center !important;
+    align-items: center !important;
+    gap: 32px !important;
+  }
+  section:first-of-type h1 {
+    font-size: 32px !important;
+  }
+  section:first-of-type > div:first-child > div {
+    max-width: 100% !important;
+  }
+
+  /* Landing Page Sections (Features, Roles, Stats, Pricing) */
+  #features, #pricing, #roles, #stats {
+    padding: 60px 16px !important;
+  }
+}
+

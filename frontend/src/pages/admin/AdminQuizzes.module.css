@@ -1,0 +1,38 @@
+.page{display:flex;flex-direction:column;gap:18px;animation:fadeIn 0.4s ease}
+.header{display:flex;align-items:center;justify-content:space-between;flex-wrap:wrap;gap:12px}
+.header h1{font-size:1.4rem;margin-bottom:3px}.header p{font-size:0.85rem;color:var(--gray-500)}
+.filters{display:flex;gap:10px;align-items:center;flex-wrap:wrap}
+.searchWrap{position:relative;flex:1;min-width:220px}
+.si{position:absolute;left:13px;top:50%;transform:translateY(-50%);color:var(--gray-400);pointer-events:none}
+.searchWrap input{width:100%;padding:11px 14px 11px 40px;border:1.5px solid var(--gray-200);border-radius:10px;font-size:0.875rem;outline:none;background:white;box-shadow:var(--shadow-sm)}
+.tabs{display:flex;gap:5px;background:var(--gray-100);border-radius:10px;padding:4px}
+.tab{padding:8px 16px;border:none;border-radius:8px;font-size:0.82rem;font-weight:700;cursor:pointer;background:transparent;color:var(--gray-500);transition:all 0.2s}
+.tabActive{background:white;color:#312e81;box-shadow:var(--shadow-sm)}
+.center{display:flex;justify-content:center;padding:60px}
+.tableWrap{background:white;border-radius:var(--radius);border:1px solid var(--gray-100);box-shadow:var(--shadow-sm);overflow:auto}
+.table{width:100%;border-collapse:collapse;font-size:0.85rem}
+.table thead tr{background:var(--gray-50);border-bottom:2px solid var(--gray-200)}
+.table th{padding:11px 13px;text-align:left;font-size:0.7rem;font-weight:800;color:var(--gray-500);text-transform:uppercase;letter-spacing:0.5px;white-space:nowrap}
+.table tbody tr{border-bottom:1px solid var(--gray-50);transition:background 0.15s}
+.table tbody tr:hover{background:var(--gray-50)}
+.table td{padding:11px 13px;vertical-align:middle}
+.num{color:var(--gray-400);font-size:0.78rem;font-weight:700}
+.quizCell{display:flex;align-items:center;gap:10px;min-width:160px}
+.quizIcon{width:32px;height:32px;border-radius:9px;background:linear-gradient(135deg,#312e81,#4338ca);color:white;display:flex;align-items:center;justify-content:center;flex-shrink:0}
+.quizTitle{font-size:0.875rem;font-weight:800;color:var(--text-primary) !important}
+.quizCategory{font-size:0.72rem;color:var(--gray-400)}
+.subject{font-size:0.82rem;color:var(--gray-600)}
+.diffBadge{font-size:0.7rem;font-weight:800;padding:3px 10px;border-radius:99px;white-space:nowrap}
+.faculty{font-size:0.82rem;color:var(--gray-600)}
+.center2{text-align:center;font-size:0.85rem;font-weight:700;color:var(--gray-700)}
+.pubBadge{font-size:0.72rem;font-weight:800;padding:3px 10px;border-radius:99px;white-space:nowrap}
+.pubOn{background:#dcfce7;color:#15803d}.pubOff{background:var(--gray-100);color:var(--gray-500)}
+.actions{display:flex;gap:5px}
+.aBtn{width:30px;height:30px;border-radius:7px;border:1.5px solid var(--gray-200);background:white;display:flex;align-items:center;justify-content:center;cursor:pointer;color:var(--gray-600);transition:all 0.2s;text-decoration:none}
+.aBtn:hover{border-color:var(--primary);color:var(--primary)}
+.aBtnRed{border-color:#fca5a5;color:#dc2626}.aBtnRed:hover{background:#fee2e2;border-color:#ef4444}
+.noData{text-align:center;padding:32px;color:var(--gray-400)}
+.pagination{display:flex;align-items:center;justify-content:center;gap:14px;font-size:0.875rem;color:var(--gray-600)}
+.pgBtn{padding:8px 18px;border:1.5px solid var(--gray-200);border-radius:8px;background:white;font-weight:700;font-size:0.82rem;cursor:pointer;transition:all 0.2s}
+.pgBtn:hover:not(:disabled){border-color:#4338ca;color:#4338ca}
+.pgBtn:disabled{opacity:0.45;cursor:not-allowed}

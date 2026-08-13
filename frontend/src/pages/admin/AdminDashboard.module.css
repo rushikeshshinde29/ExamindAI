@@ -1,0 +1,44 @@
+.page{display:flex;flex-direction:column;gap:20px;animation:fadeIn 0.4s ease}
+.center{display:flex;justify-content:center;align-items:center;min-height:60vh}
+.hero{background:linear-gradient(135deg,var(--primary),var(--primary-light));border-radius:var(--radius-lg);padding:28px 32px;display:flex;align-items:center;justify-content:space-between;gap:20px;flex-wrap:wrap}
+.heroBadge{display:inline-block;background:rgba(245,158,11,0.18);border:1px solid rgba(245,158,11,0.3);color:#fbbf24;padding:4px 12px;border-radius:99px;font-size:0.72rem;font-weight:800;margin-bottom:10px}
+.hero h1{font-size:1.5rem;color:white;margin-bottom:5px}
+.hero p{color:rgba(255,255,255,0.65);font-size:0.875rem}
+.heroActions{display:flex;gap:10px}
+.heroBtn{display:flex;align-items:center;gap:7px;background:white;color:var(--primary);padding:10px 20px;border-radius:9px;font-weight:800;font-size:0.85rem;transition:all 0.2s;white-space:nowrap}
+.heroBtn:hover{transform:translateY(-2px);box-shadow:0 6px 16px rgba(0,0,0,0.2);color:var(--primary)}
+.heroBtn2{display:flex;align-items:center;gap:7px;background:rgba(255,255,255,0.12);color:white;padding:10px 20px;border-radius:9px;font-weight:700;font-size:0.85rem;border:1px solid rgba(255,255,255,0.2);transition:all 0.2s;white-space:nowrap}
+.heroBtn2:hover{background:rgba(255,255,255,0.2);color:white}
+.statsGrid{display:grid;grid-template-columns:repeat(3,1fr);gap:14px}
+.statCard{background:white;border-radius:var(--radius);padding:18px;border:1px solid var(--gray-100);box-shadow:var(--shadow-sm);display:flex;flex-direction:column;gap:10px;transition:all 0.25s;text-decoration:none;position:relative;overflow:hidden}
+.statCard:hover{transform:translateY(-3px);box-shadow:var(--shadow-md)}
+.statIcon{width:44px;height:44px;border-radius:12px;display:flex;align-items:center;justify-content:center}
+.statVal{font-family:var(--font-display);font-size:1.8rem;font-weight:800;color:var(--gray-900)}
+.statLabel{font-size:0.78rem;color:var(--gray-500);font-weight:500}
+.statArrow{position:absolute;bottom:16px;right:16px;color:var(--primary)}
+.grid2{display:grid;grid-template-columns:1fr 1fr;gap:18px}
+.card{background:white;border-radius:var(--radius);padding:22px;border:1px solid var(--gray-100);box-shadow:var(--shadow-sm)}
+.card h2{font-size:0.92rem;font-weight:700;margin-bottom:14px}
+.cardHead{display:flex;align-items:center;justify-content:space-between;margin-bottom:14px}
+.cardHead h2{font-size:0.92rem;font-weight:700;margin:0}
+.seeAll{font-size:0.78rem;color:var(--primary);font-weight:700;display:flex;align-items:center;gap:4px}
+.list{display:flex;flex-direction:column;gap:4px}
+.listRow{display:flex;align-items:center;gap:11px;padding:9px 10px;border-radius:9px;transition:background 0.15s}
+.listRow:hover{background:var(--gray-50)}
+.listAv{width:34px;height:34px;border-radius:50%;background:linear-gradient(135deg,var(--primary),#0ea5e9);color:white;font-weight:800;font-size:0.85rem;display:flex;align-items:center;justify-content:center;flex-shrink:0}
+.listInfo{flex:1;min-width:0}
+.listName{font-size:0.85rem;font-weight:700;color:var(--gray-800)}
+.listSub{font-size:0.72rem;color:var(--gray-400);overflow:hidden;text-overflow:ellipsis;white-space:nowrap}
+.scoreBadge{font-size:0.72rem;font-weight:800;padding:3px 9px;border-radius:99px}
+.pass{background:#dcfce7;color:#15803d}
+.fail{background:#fee2e2;color:#dc2626}
+.empty{font-size:0.82rem;color:var(--gray-400);text-align:center;padding:14px}
+.quickLinks{display:grid;grid-template-columns:repeat(4,1fr);gap:12px}
+.quickCard{display:flex;align-items:center;gap:12px;background:white;border-radius:var(--radius);padding:16px;border:1.5px solid var(--gray-100);box-shadow:var(--shadow-sm);text-decoration:none;transition:all 0.2s}
+.quickCard:hover{border-color:var(--primary);transform:translateY(-2px);box-shadow:var(--shadow-md)}
+.quickIcon{font-size:1.5rem;flex-shrink:0}
+.quickLabel{font-size:0.85rem;font-weight:800;color:var(--gray-800);margin-bottom:2px}
+.quickDesc{font-size:0.72rem;color:var(--gray-400);line-height:1.4}
+.quickArrow{color:var(--gray-300);flex-shrink:0;margin-left:auto}
+@media(max-width:1024px){.statsGrid{grid-template-columns:repeat(3,1fr)}.quickLinks{grid-template-columns:repeat(2,1fr)}}
+@media(max-width:768px){.statsGrid{grid-template-columns:repeat(2,1fr)}.grid2{grid-template-columns:1fr}}

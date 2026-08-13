@@ -1,0 +1,138 @@
+.page {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.header h1 {
+  font-size: 1.6rem;
+  font-weight: 700;
+  color: var(--gray-800);
+  margin-bottom: 4px;
+}
+
+.header p {
+  color: var(--gray-500);
+  font-size: 0.95rem;
+}
+
+.card {
+  background: white;
+  border-radius: 10px;
+  border: 1px solid var(--gray-100);
+  box-shadow: 0 1px 3px rgba(0,0,0,0.05);
+  overflow: hidden;
+  padding: 10px;
+}
+
+.center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 50px 0;
+}
+
+.empty {
+  text-align: center;
+  padding: 40px 20px;
+  color: var(--gray-400);
+  font-size: 0.95rem;
+}
+
+.table {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 0.9rem;
+}
+
+.table th,
+.table td {
+  padding: 14px 16px;
+  text-align: left;
+  border-bottom: 1px solid var(--gray-100);
+}
+
+.table th {
+  background: #f8fafc;
+  font-weight: 800;
+  font-size: 0.72rem;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+  color: var(--gray-500);
+}
+
+.timeCol {
+  width: 170px;
+}
+.timeWrap {
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+}
+.dateVal {
+  font-size: 0.85rem;
+  font-weight: 700;
+  color: var(--gray-800);
+}
+.timeVal {
+  font-size: 0.72rem;
+  color: var(--gray-400);
+}
+
+.actionBadge {
+  display: inline-block;
+  padding: 4px 10px;
+  border-radius: 99px;
+  font-weight: 800;
+  font-size: 0.7rem;
+  letter-spacing: 0.3px;
+  white-space: nowrap;
+}
+
+.userCell {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  min-width: 180px;
+}
+.av {
+  width: 28px;
+  height: 28px;
+  border-radius: 50%;
+  color: white;
+  font-weight: 800;
+  font-size: 0.78rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.15);
+}
+.emailText {
+  font-size: 0.82rem;
+  font-weight: 700;
+  color: var(--gray-700);
+  max-width: 220px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.detailsCol {
+  vertical-align: middle;
+}
+.detailsText {
+  font-size: 0.82rem;
+  color: var(--gray-600);
+  line-height: 1.4;
+}
+
+.row {
+  transition: all 0.15s ease;
+}
+.row:hover td {
+  background: var(--gray-50) !important;
+}
+.row:hover td:first-child {
+  box-shadow: inset 4px 0 0 var(--primary) !important;
+}

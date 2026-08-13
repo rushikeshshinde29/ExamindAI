@@ -1,0 +1,65 @@
+.page{display:flex;flex-direction:column;gap:18px;animation:fadeIn 0.4s ease}
+.header{display:flex;align-items:center;justify-content:space-between;flex-wrap:wrap;gap:12px}
+.header h1{font-size:1.4rem;margin-bottom:3px}.header p{font-size:0.85rem;color:var(--gray-500)}
+.addBtn{display:flex;align-items:center;gap:7px;background:linear-gradient(135deg,#312e81,#4338ca);color:white;padding:11px 20px;border-radius:10px;font-weight:800;font-size:0.875rem;border:none;cursor:pointer;transition:all 0.2s}
+.addBtn:hover{transform:translateY(-2px);box-shadow:0 8px 20px rgba(49,46,129,0.4)}
+.empty{display:flex;flex-direction:column;align-items:center;gap:12px;padding:60px;text-align:center;background:white;border-radius:var(--radius);border:1px solid var(--gray-100)}
+.empty span{font-size:3rem}.empty p{color:var(--gray-400);font-size:0.875rem}
+.list{display:flex;flex-direction:column;gap:14px}
+.groupCard{background:white;border-radius:var(--radius);border:1.5px solid var(--gray-100);box-shadow:var(--shadow-sm);overflow:hidden}
+.groupHead{display:flex;align-items:center;justify-content:space-between;padding:16px 20px;gap:14px;flex-wrap:wrap}
+.groupLeft{display:flex;align-items:center;gap:13px}
+.groupAv{width:44px;height:44px;border-radius:12px;background:linear-gradient(135deg,#312e81,#4338ca);color:white;font-weight:800;font-size:1.1rem;display:flex;align-items:center;justify-content:center;flex-shrink:0}
+.groupName{font-size:0.95rem;font-weight:800;color:var(--gray-800);margin-bottom:4px}
+.groupMeta{display:flex;gap:12px;font-size:0.75rem;color:var(--gray-500);flex-wrap:wrap}
+.groupMeta span{display:flex;align-items:center;gap:3px}
+.groupActions{display:flex;align-items:center;gap:7px;flex-wrap:wrap}
+.actionBtn{display:flex;align-items:center;gap:5px;padding:7px 13px;background:#eff6ff;border:1.5px solid #bfdbfe;border-radius:8px;color:var(--primary);font-size:0.78rem;font-weight:800;cursor:pointer;transition:all 0.2s}
+.actionBtn:hover{background:var(--primary);color:white;border-color:var(--primary)}
+.iconBtn{width:32px;height:32px;border-radius:8px;border:1.5px solid var(--gray-200);background:white;display:flex;align-items:center;justify-content:center;cursor:pointer;color:var(--gray-600);transition:all 0.2s}
+.iconBtn:hover{border-color:var(--primary);color:var(--primary)}
+.iconBtnRed:hover{border-color:#ef4444;color:#dc2626}
+.groupBody{border-top:1px solid var(--gray-100);padding:16px 20px;display:flex;flex-direction:column;gap:16px;background:var(--gray-50)}
+.section{background:white;border-radius:var(--radius-sm);border:1px solid var(--gray-100);overflow:hidden}
+.sectionTitle{font-size:0.75rem;font-weight:800;color:var(--gray-600);text-transform:uppercase;letter-spacing:0.5px;padding:9px 14px;background:var(--gray-50);border-bottom:1px solid var(--gray-100)}
+.noItem{font-size:0.82rem;color:var(--gray-400);padding:14px;text-align:center}
+.memberList{display:flex;flex-direction:column;gap:2px;padding:6px 8px}
+.memberRow{display:flex;align-items:center;gap:10px;padding:8px;border-radius:8px;transition:background 0.15s}
+.memberRow:hover{background:var(--gray-50)}
+.memberAv{width:30px;height:30px;border-radius:50%;display:flex;align-items:center;justify-content:center;font-weight:800;font-size:0.8rem;color:white;flex-shrink:0}
+.memberName{font-size:0.85rem;font-weight:700;color:var(--gray-800)}
+.memberRow small{font-size:0.72rem;color:var(--gray-400)}
+.removeBtn{margin-left:auto;width:26px;height:26px;border-radius:7px;border:1.5px solid #fca5a5;background:white;display:flex;align-items:center;justify-content:center;cursor:pointer;color:#ef4444;transition:all 0.2s}
+.removeBtn:hover{background:#fee2e2}
+.studentTable{display:flex;flex-direction:column}
+.studentHead{display:grid;grid-template-columns:1fr 1.5fr 90px 36px;padding:8px 14px;background:var(--gray-50);font-size:0.7rem;font-weight:800;color:var(--gray-500);text-transform:uppercase;border-bottom:1px solid var(--gray-100)}
+.studentRow{display:grid;grid-template-columns:1fr 1.5fr 90px 36px;padding:9px 14px;border-bottom:1px solid var(--gray-50);align-items:center}
+.studentRow:last-child{border-bottom:none}
+.sName{font-size:0.85rem;font-weight:700;color:var(--gray-800)}
+.sEmail{font-size:0.78rem;color:var(--gray-500);overflow:hidden;text-overflow:ellipsis;white-space:nowrap}
+.sBadge{font-size:0.68rem;font-weight:800;padding:3px 8px;border-radius:99px}
+.sActive{background:#dcfce7;color:#15803d}
+.sPending{background:#fef9c3;color:#854d0e}
+/* Modal */
+.overlay{position:fixed;inset:0;z-index:600;background:rgba(0,0,0,0.55);backdrop-filter:blur(4px);display:flex;align-items:center;justify-content:center;padding:20px}
+.modal{background:white;border-radius:20px;width:100%;max-width:580px;box-shadow:0 32px 64px rgba(0,0,0,0.25);animation:fadeInScale 0.25s ease;display:flex;flex-direction:column;max-height:90vh}
+.modalHead{display:flex;align-items:center;justify-content:space-between;padding:18px 24px;border-bottom:1px solid var(--gray-100)}
+.modalHead h2{font-size:1rem;font-weight:800}
+.modalHead button{background:none;border:none;color:var(--gray-400);cursor:pointer;padding:4px;border-radius:8px;display:flex}
+.modalHead button:hover{background:var(--gray-100)}
+.modalBody{padding:22px 24px;overflow-y:auto;flex:1;display:flex;flex-direction:column;gap:14px}
+.modalFoot{display:flex;justify-content:flex-end;gap:10px;padding:16px 24px;border-top:1px solid var(--gray-100)}
+.formGrid{display:grid;grid-template-columns:1fr 1fr;gap:12px}
+.field{display:flex;flex-direction:column;gap:5px}
+.field label{font-size:0.78rem;font-weight:700;color:var(--gray-700)}
+.field input,.field select{padding:10px 12px;border:1.5px solid var(--gray-200);border-radius:9px;font-size:0.875rem;outline:none;transition:border-color 0.2s;background:white}
+.field input:focus,.field select:focus{border-color:#4338ca}
+.hint{font-size:0.85rem;color:var(--gray-600);line-height:1.6;background:#eff6ff;border:1px solid #bfdbfe;border-radius:9px;padding:12px 14px}
+.emailArea{width:100%;padding:12px;border:1.5px solid var(--gray-200);border-radius:9px;font-size:0.85rem;outline:none;resize:vertical;font-family:monospace;transition:border-color 0.2s;box-sizing:border-box}
+.emailArea:focus{border-color:#4338ca}
+.cancelBtn{padding:10px 20px;border:1.5px solid var(--gray-200);border-radius:9px;background:white;color:var(--gray-600);font-weight:700;font-size:0.875rem;cursor:pointer}
+.saveBtn{display:flex;align-items:center;gap:7px;padding:10px 22px;background:linear-gradient(135deg,#312e81,#4338ca);color:white;border:none;border-radius:9px;font-weight:800;font-size:0.875rem;cursor:pointer}
+.saveBtn:disabled{opacity:0.65;cursor:not-allowed}
+.spin{width:16px;height:16px;border:2px solid rgba(255,255,255,0.4);border-top-color:white;border-radius:50%;animation:spin 0.7s linear infinite}
+@keyframes spin{to{transform:rotate(360deg)}}
+@media(max-width:640px){.formGrid{grid-template-columns:1fr}.studentHead,.studentRow{grid-template-columns:1fr 1fr 80px}}
